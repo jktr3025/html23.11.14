@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marquee</title>
+<style type="text/css">
+    .mar{
+        width: 500px;
+        border: 1px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <marquee behavior="scroll" direction="" class="mar"  scrolldelay="5000" scrollamount="50" loop="2">
+        Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit.
+        <!--
+            1) behavior 방향성
+            scroll 글자가 끝나도 다시 흐름 
+            slide 글자가 끝나면 더 이상 흐르지 않음
+             alternate 왔다갔다 반복 
+             2) direction 흐르는 방향
+             left 기본 up / down / right
+             3) scrollamount="숫자" 흐르는 속도
+             숫자가 빠를 수록 빠름
+             4)scrolldelay="숫자" 얼마나 멈췄다가 흐를지
+             5)loop="숫자" 반복횟수
+             기본이 infinite 
+        -->
+    </marquee>
+</body>
+
+</html>

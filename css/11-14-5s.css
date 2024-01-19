@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+    list-style: none;
+} 
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#box{
+    width: 1000px;
+    border: black solid 3px;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+#box li{
+    width: 150px;height: 150px;
+    display: inline-block;
+    /* border: 1px solid green; */
+    /* line-height: 150px; */
+}
+#box li a {
+    /* border: 1px solid tomato; */
+    font-size: 60px;
+    display: block ;
+    /* inline block 구조는 형제들이 많을 때 
+    옆으로 내용이 들어오도록 하는 것
+    지금은 형제가 없으니 지금은 block으로만도 가능*/
+    /* width: 100%; */
+    /* block 구조로 바뀌었기 때문에 부모의 w을 상속 가능 */
+    height: 100%;
+    /* h는 부모의 값이 상속은 안되지만 부모의 값이 정해졌을 때
+    부모와 똑같은 값을 쓰려할 때 100%라고 적을 수 있음  */
+}
+
+/* .b01{
+background:palegreen;}
+.b02{
+background: rebeccapurple;}
+.b03{
+background:olive ;
+display: none;}
+.b04{
+background: thistle;}
+.b05{
+background: cornflowerblue;}
+
+#box li:hover{
+    background: black;
+    color: white;
+} */
+
+.b01 a{
+    background: orange;
+}
+
+.b02 a{
+    background: olive;
+}
+
+#box .b03 a{
+    background: tomato;
+    display: none;
+}
+
+.b04 a{
+    background: plum;
+}
+
+.b05 a{
+    background: cornflowerblue;
+}
+
+#box li a:hover{
+    background: black;
+    color: white;
+}
+h1{
+    width: 500px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    /* padding: 30px 0; */
+    height: 100px;
+    line-height: 100px;
+
+}

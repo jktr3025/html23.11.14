@@ -1,0 +1,79 @@
+@charset "utf-8";
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.box1{
+    border: 1px solid tomato;
+    width: 1200px;
+    /* height: 100px; */
+    overflow: hidden;
+}
+.inner{
+    border: 1px solid blue;
+    width: calc(100% / 4);
+float:left;
+/* 디스플레이-인라인 블록과 비교하여
+마진 없이 들어오지만 
+부모의 높이를 지정해주지 않으면
+글자가 넘칠 수 있음
+부모의 높이 지정해주거나
+오버플로우 히든 걸어주기 */
+}
+.wrap{
+    width: 500px;height: 100px;
+    background: skyblue;
+    border: 1px solid teal;
+    clear: left;
+
+    /* 
+    플롯을 쓴 후 
+    부모에 높이 주거나 오버플로우 히든 걸기 싫으면
+    clear 명령어 쓸 수 있음
+    left / right / both 
+플롯 걸어준 것에 따라서 써주거나 신경쓰기 싫으면 both
+*/
+}
+.box3{
+    /* border: 1px solid olive; */
+    margin: 50px auto ;
+    width: 1200px;
+    overflow: hidden;
+}
+.box3 li{
+    /* border: 1px solid palegreen; */
+    float: left;
+    width: calc(1120px / 5) ;
+    margin-right: 20px;
+    /* margin-left: 20px; */
+    }
+.box3 li:last-child{margin-right: 0 !important;}
+/* .box3 li:first-child{margin-left: 0 !important;} */
+/* 꼭 먼저 실행해줘야하는 명령어의 경우 
+한 칸 띄고 !important 써준다
+;안으로 입력하기 */
+.box3 li a{
+    background-color: orange;
+    display: block;
+    text-align: center;
+    padding: 15px 0 ;
+}
+.box3 li a span{
+    display: block;
+}
+.box3 li a .kor{
+    font-size: 20px;
+    font-weight: bold ;
+}
+.box3 li a .eng{
+    font-size: 12px;
+}
+.box3 li a:hover{
+background: rgba(255, 255, 0, 0.605);
+}
